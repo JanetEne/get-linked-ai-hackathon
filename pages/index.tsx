@@ -1,12 +1,11 @@
+import Layout from '@components/Layouts/Landing';
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <h4>Hello world</h4>
-    </div>
+    <Layout>
+      <div>hello home</div>
+    </Layout>
   );
 };
 

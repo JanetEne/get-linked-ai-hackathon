@@ -16,10 +16,12 @@ module.exports = {
       },
       colors: {
         primary: '#D434FE',
-        secondary: '903AFF',
+        secondary: '#903AFF',
+        background: '#150E28',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'san-serif'],
+        inter: ['Inter', 'san-serif'],
       },
       animation: {
         appear: 'appear .5s ease-in-out 1',
@@ -47,6 +49,12 @@ module.exports = {
       },
       boxShadow: {
         cardShadow: ' 0px 20px 40px 12px rgb(0 0 0 / 0.024);',
+      },
+      backgroundImage: {
+        'hero-purple-lens': "url('/assets/images/Purple-Lens-Flare-PNG.png') ",
+        'hero-card-pattern': "url('/assets/landing-header-card-pattern.svg') ",
+        'landing-banner': "url('/assets/landing-banner-pattern.svg') ",
+        'landing-banner-right': "url('/assets/landing-banner-pattern.svg') ",
       },
     },
   },

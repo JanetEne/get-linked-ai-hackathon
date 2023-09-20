@@ -30,7 +30,26 @@
   src: url("../fonts/Montserrat-SemiBold.woff");
 }
 
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Inter-Medium.woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Inter-SemiBold.woff");
+}
+
 html,
 body {
   scroll-behavior: smooth;
+  @apply bg-background font-montserrat text-white
+}
+
+.landing-hero {
+  @apply bg-hero-purple-lens bg-no-repeat bg-[left_-22em_top_-13rem];
 }
