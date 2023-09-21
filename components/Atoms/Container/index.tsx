@@ -12,7 +12,7 @@ declare type ContainerType = {
 const Container = ({ children, className }: ContainerType) => {
   return (
     <div
-      className={` lg:max-w-[1200px] 2xl:max-w-[1440px] px-5 sm:px-12 lg:px-8 mx-auto ${
+      className={`lg:max-w-[1200px] 2xl:max-w-[1440px] px-8 sm:px-14 lg:px-8 mx-auto ${
         className ? className : ''
       }`}
     >

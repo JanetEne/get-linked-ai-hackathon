@@ -25,10 +25,9 @@ const Navbar = () => {
       <Container className="w-full flex items-center justify-between">
         <div className="flex justify-between items-center max-w-[1100px] w-full mr-8 ">
           <Link href="/">
-            <Icon
-              icon="Getlinked"
-              className="w-[124px] h-[37px] cursor-pointer"
-            />
+            <p className="font-clash text-2xl lg:text-3xl xl:text-4xl font-bold">
+              get<span className="text-primary">linked</span>
+            </p>
           </Link>
 
           <div className="hidden md:flex items-center gap-3">
@@ -61,14 +60,14 @@ const Navbar = () => {
         <div
           className={`${
             toggleMenu
-              ? 'flex flex-col absolute md:static top-0 right-0 z-50 w-full md:w-fit bg-background pt-8 pb-12 px-4 md:block animate-appear'
+              ? 'flex flex-col absolute md:fixed top-0 right-0 z-50 w-full h-full md:w-fit bg-background pt-8 pb-12 px-4 md:block animate-appear'
               : 'hidden md:block'
           }`}
         >
           <div className="flex flex-col gap-4">
             <div className="md:hidden flex justify-end">
               <div
-                className="p-[1.5px] rounded-full w-5 h-5 bg-gradient-to-r flex items-center justify-center from-secondary via-primary to-[#FE34B9]"
+                className="p-[1.5px] rounded-full w-5 h-5 bg-gradient-to-r flex items-center justify-center from-secondary via-primary to-tetiary"
                 onClick={() => setToggleMenu(false)}
               >
                 <div className="h-full w-full rounded-full bg-background flex items-center justify-center">

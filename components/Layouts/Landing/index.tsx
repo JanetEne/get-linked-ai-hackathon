@@ -1,4 +1,6 @@
+import Divider from '@components/Atoms/Divider';
 import Icon from '@components/Atoms/Icon';
+import Footer from '@components/Molecules/Footer';
 import Navbar from '@components/Molecules/Navbar';
 import Head from 'next/head';
 import { ReactNode } from 'react';
@@ -20,8 +22,9 @@ function Layout({ children, title = 'GetLinked' }: LayoutProps) {
       </Head>
       <div>
         <Navbar />
-        <hr className="border-white/20" />
+        <Divider />
         <div>{children}</div>
+        <Footer />
       </div>
     </>
   );

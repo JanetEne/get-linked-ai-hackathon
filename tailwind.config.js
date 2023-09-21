@@ -17,11 +17,15 @@ module.exports = {
       colors: {
         primary: '#D434FE',
         secondary: '#903AFF',
+        tetiary: '#FF26B9',
         background: '#150E28',
+        footerBg: '#100B20',
+        introBg: '#140D27',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'san-serif'],
         inter: ['Inter', 'san-serif'],
+        clash: ['ClashDisplay', 'san-serif'],
       },
       animation: {
         appear: 'appear .5s ease-in-out 1',

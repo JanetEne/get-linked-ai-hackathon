@@ -1,5 +1,13 @@
+export { default as CheckCircle } from "./CheckCircle";
 export { default as CircleClose } from "./CircleClose";
 export { default as Close } from "./Close";
+export { default as Contact } from "./Contact";
 export { default as Divider } from "./Divider";
+export { default as Facebook } from "./Facebook";
 export { default as Getlinked } from "./Getlinked";
+export { default as Instagram } from "./Instagram";
+export { default as LinkedIn } from "./LinkedIn";
+export { default as Location } from "./Location";
 export { default as Menu } from "./Menu";
+export { default as Plus } from "./Plus";
+export { default as X } from "./X";
