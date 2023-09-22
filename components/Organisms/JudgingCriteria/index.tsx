@@ -7,13 +7,31 @@ const JudgingCriteria = () => {
   return (
     <Container className="py-20">
       <div className="lg:gap-20 gap-10 flex flex-col lg:flex-row lg:pl-26 lg:pr-20">
-        <div className="lg:w-[60%] flex justify-center items-center">
-          <Image
-            src="/assets/images/judging-criteria.png"
-            alt="the big idea"
-            width={500}
-            height={500}
-          />
+        <div className="lg:w-[60%] flex justify-center items-center relative">
+          <span className="absolute h-full w-full top-[10rem] right-[10rem]">
+            <Image
+              src={'/assets/svg/purple-Lens-Flare-judgeing.svg'}
+              alt="background"
+              layout="fill"
+              objectFit="contain"
+            />
+          </span>
+          <span className="absolute top-[4.9rem] left-[9.5rem] h-[6.5rem] w-[6.5rem]">
+            <Image
+              src={'/assets/svg/ecllipse.svg'}
+              alt="background"
+              layout="fill"
+              objectFit="contain"
+            />
+          </span>
+          <span className="absolute z-10 top-24">
+            <Image
+              src="/assets/images/judging-criteria.png"
+              alt="the big idea"
+              width={600}
+              height={600}
+            />
+          </span>
         </div>
         <div className="flex flex-col gap-4 lg:w-[40%] justify-center items-center lg:items-start text-center lg:text-start ">
           <div className="font-clash flex flex-col gap-2 items-center lg:items-start text-center lg:text-start font-extrabold lg:text-2xl text-lg mb-2">

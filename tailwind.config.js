@@ -28,39 +28,13 @@ module.exports = {
         clash: ['ClashDisplay', 'san-serif'],
         unica: ['UnicaOne', 'san-serif'],
       },
-      animation: {
-        appear: 'appear .5s ease-in-out 1',
-        popUp: 'popUp .5s ease-in-out 1',
-        dropDown: 'popUp .5s ease-in-out 1',
-        slideIn: 'slideIn .5s ease-in-out forwards',
-      },
-      keyframes: {
-        appear: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        popUp: {
-          '0%': { marginBottom: '-14rem' },
-          '100%': { marginBottom: '0rem' },
-        },
-        dropDown: {
-          '0%': { height: '80%' },
-          '100%': { height: 'fit-content' },
-        },
-        slideIn: {
-          '0%': { transform: 'translateX(-200px)', opacity: '0.1' },
-          '100%': { transform: 'translateX(0)', opacity: '1' },
-        },
-      },
       boxShadow: {
-        cardShadow: ' 0px 20px 40px 12px rgb(0 0 0 / 0.024);',
+        cardShadow: '0px 4px 4px 0px rgba(0 0 0 / 0.25);',
       },
       backgroundImage: {
         'hero-purple-lens': "url('/assets/images/Purple-Lens-Flare-PNG.png') ",
-        'hero-card-pattern': "url('/assets/landing-header-card-pattern.svg') ",
-        'landing-banner': "url('/assets/landing-banner-pattern.svg') ",
-        'landing-banner-right': "url('/assets/landing-banner-pattern.svg') ",
         'prices-bg': "url('/assets/images/prizesbglarge.png')",
+        'purple-flare-contact': "url('/assets/svg/purpleFlare.svg')",
       },
     },
   },

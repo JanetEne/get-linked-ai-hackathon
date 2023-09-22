@@ -3,9 +3,13 @@ import Container from '@components/Atoms/Container';
 import Icon from '@components/Atoms/Icon';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 
-const Navbar = () => {
+interface INavBar {
+  show?: boolean;
+}
+
+const Navbar: FC<INavBar> = ({ show = true }) => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
 
   const router = useRouter();
@@ -21,7 +25,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav id="navbar" className="pb-6 pt-10 w-full">
+    <nav
+      id="navbar"
+      className={`${!show ? 'lg:block hidden' : 'block'} pb-6 pt-10 w-full`}
+    >
       <Container className="w-full flex items-center justify-between">
         <div className="flex justify-between items-center max-w-[1100px] w-full mr-8 ">
           <Link href="/">

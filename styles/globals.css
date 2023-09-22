@@ -85,6 +85,14 @@ body {
   @apply bg-background font-montserrat text-white
 }
 
-.landing-hero {
+/* .blendHardLight {
+  background-blend-mode: hard-light;
+} */
+
+/* .landing-hero {
   @apply bg-hero-purple-lens bg-no-repeat bg-[left_-22em_top_-13rem];
 }
+
+.landing-header {
+  @apply bg-secondary lg:bg-hero-pattern bg-no-repeat bg-[length:230px_400px];
+} */

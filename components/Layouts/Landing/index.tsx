@@ -10,7 +10,7 @@ type LayoutProps = {
   title?: string;
 };
 
-function Layout({ children, title = 'GetLinked' }: LayoutProps) {
+const Layout = ({ children, title = 'GetLinked' }: LayoutProps) => {
   // const pageTitle = `GetLinked ${title}`;
 
   return (
@@ -28,6 +28,6 @@ function Layout({ children, title = 'GetLinked' }: LayoutProps) {
       </div>
     </>
   );
-}
+};
 
 export default Layout;

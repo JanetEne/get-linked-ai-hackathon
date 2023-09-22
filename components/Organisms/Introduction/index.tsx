@@ -5,7 +5,7 @@ import React from 'react';
 const Introduction = () => {
   return (
     <div className="bg-introBg">
-      <Container className="py-20">
+      <Container className="py-14">
         <div className="lg:gap-20 gap-10  flex flex-col lg:flex-row lg:pl-26 lg:pr-20">
           <div className="lg:w-[60%] flex justify-center items-center">
             <Image

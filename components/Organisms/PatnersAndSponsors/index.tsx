@@ -5,8 +5,16 @@ import React from 'react';
 const PartnersAndSponsors = () => {
   return (
     <Container className="py-20">
-      <div className="gap-12 flex flex-col lg:px-[6rem] justify-center">
-        <div className="gap-6 flex flex-col lg:px-[12rem] xl:px-[22rem] text-center items-center">
+      <div className="gap-12 flex flex-col lg:px-[6rem] justify-center relative">
+        <span className="absolute h-full w-full">
+          <Image
+            src={'/assets/svg/purpleLensPartners.svg'}
+            alt="background"
+            layout="fill"
+            objectFit="contain"
+          />
+        </span>
+        <div className="gap-6 flex flex-col lg:px-[12rem] xl:px-[22rem] text-center items-center ">
           <p className="leading-[1] font-clash font-extrabold lg:text-2xl text-lg">
             Partners and Sponsors
           </p>
