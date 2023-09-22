@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
             Below are our privacy & policy, which outline a lot of goodies. it’s
             our aim to always take of our participant
           </p>
-          <div className="border-[1px] lg:text-sm text-xs border-primary rounded-md flex flex-col px-14 py-12 mt-6">
+          <div className="border-[1px] lg:text-sm text-xs border-primary rounded-md flex flex-col lg:px-14 px-6 py-12 mt-6">
             <p className="leading-8 mb-8 text-center lg:text-start ">
               At getlinked tech Hackathon 1.0, we value your privacy and are
               committed to protecting your personal information. This Privacy

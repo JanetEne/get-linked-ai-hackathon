@@ -18,18 +18,20 @@ const Footer = () => {
 
   return (
     <div className="bg-footerBg">
-      <Container className="pt-20 pb-16 lg:px-12 ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-20 lg:gap-0 w-fit mx-auto ">
+      <Container className="pt-20 pb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[40%_35%_35%] gap-12  sm:gap-20 lg:gap-0 w-full lg:px-20">
           <div>
-            <div className="left-section flex flex-col gap-6 items-start">
+            <div className="left-section flex flex-col gap-6 flex-start">
               <Link href="/">
                 <p className="font-clash text-xl lg:text-3xl font-bold">
                   get<span className="text-primary">linked</span>
                 </p>
               </Link>
               <p className="text-xs text-start leading-7">
-                Getlinked Tech Hackathon is a technology innovation program
-                established by a group of organizations with the aim of
+                Getlinked Tech Hackathon is a technology innovation program{' '}
+                <br className="hidden xl:block" />
+                established by a group of organizations with the aim of{' '}
+                <br className="hidden xl:block" />
                 showcasing young and talented individuals in the field of
                 technology
               </p>
@@ -59,28 +61,26 @@ const Footer = () => {
             <div className="flex gap-x-4 items-center mt-6">
               <p className="text-xs text-primary">Follow us</p>
               <a
-                href={'https://linkedin.com/truparse'}
+                href={
+                  'https://instagram.com/getlinked.ai?igshid=MzRlODBiNWFlZA=='
+                }
                 rel="noreferrer"
                 target="_blank"
               >
                 <Icon icon="Instagram" className="w-5 h-5" />
               </a>
               <a
-                href={'https://linkedin.com/truparse'}
+                href={'https://twitter.com/getLinkedai'}
                 rel="noreferrer"
                 target="_blank"
               >
                 <Icon icon="X" />
               </a>
-              <a
-                href={'https://linkedin.com/truparse'}
-                rel="noreferrer"
-                target="_blank"
-              >
+              <a href={'#'}>
                 <Icon icon="Facebook" />
               </a>
               <a
-                href={'https://linkedin.com/truparse'}
+                href={'https://www.linkedin.com/company/getlinked-ai/'}
                 rel="noreferrer"
                 target="_blank"
               >
@@ -95,10 +95,10 @@ const Footer = () => {
                 <Icon icon="Contact" />
                 <p className="text-xs">+234 6707653444</p>
               </div>
-              <div className="flex gap-4 items-center xl:pr-32">
-                <Icon icon="Location" />
-                <p className="text-xs">
-                  27,Alara Street Yaba 100012 Lagos State
+              <div className="flex gap-4 xl:pr-32">
+                <Icon icon="Location" className="mt-1" />
+                <p className="text-xs leading-5">
+                  27,Alara Street <br /> Yaba 100012 <br /> Lagos State
                 </p>
               </div>
             </div>

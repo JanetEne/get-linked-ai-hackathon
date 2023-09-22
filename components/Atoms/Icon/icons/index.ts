@@ -1,3 +1,4 @@
+export { default as Chain } from "./Chain";
 export { default as CheckCircle } from "./CheckCircle";
 export { default as CircleClose } from "./CircleClose";
 export { default as Close } from "./Close";

@@ -4,7 +4,7 @@ import React from 'react';
 
 const RulesAndGuidelines = () => {
   return (
-    <Container className="pb-20">
+    <Container className="py-20">
       <div className="lg:gap-20 gap-10 flex flex-col lg:flex-row lg:px-20">
         <div className="flex flex-col gap-4 lg:w-[50%] xl:pl-16 justify-center items-center lg:items-start text-center lg:text-start order-2 lg:order-1">
           <div className="font-clash flex flex-col gap-2 items-center lg:items-start text-center lg:text-start font-extrabold lg:text-2xl text-lg mb-2">

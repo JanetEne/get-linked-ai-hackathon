@@ -26,6 +26,7 @@ module.exports = {
         montserrat: ['Montserrat', 'san-serif'],
         inter: ['Inter', 'san-serif'],
         clash: ['ClashDisplay', 'san-serif'],
+        unica: ['UnicaOne', 'san-serif'],
       },
       animation: {
         appear: 'appear .5s ease-in-out 1',
@@ -59,6 +60,7 @@ module.exports = {
         'hero-card-pattern': "url('/assets/landing-header-card-pattern.svg') ",
         'landing-banner': "url('/assets/landing-banner-pattern.svg') ",
         'landing-banner-right': "url('/assets/landing-banner-pattern.svg') ",
+        'prices-bg': "url('/assets/images/prizesbglarge.png')",
       },
     },
   },

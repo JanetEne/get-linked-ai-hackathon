@@ -72,6 +72,13 @@
   src: url("../fonts/ClashDisplay-Semibold.woff");
 }
 
+@font-face {
+  font-family: "UnicaOne";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/UnicaOne-Regular.woff");
+}
+
 html,
 body {
   scroll-behavior: smooth;
