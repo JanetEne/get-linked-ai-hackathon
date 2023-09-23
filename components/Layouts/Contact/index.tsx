@@ -20,7 +20,7 @@ const ContactLayout = ({ children, title }: AuthProps) => {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <Navbar show={false} />
+      <Navbar show={false} colorText={true} />
       <div className="grid lg:grid-cols-[45%_55%] h-full lg:px-12 lg:py-12">
         <div className="justify-center hidden lg:flex items-center relative">
           <span className="absolute -top-12 -left-12 h-full w-full">
@@ -31,7 +31,7 @@ const ContactLayout = ({ children, title }: AuthProps) => {
               objectFit="contain"
             />
           </span>
-          <div className="flex items-start gap-4 flex-col">
+          <div className="flex items-start gap-4 flex-col absolute z-30">
             <p className="text-primary font-semibold text-[32px] font-clash">
               Get In Touch
             </p>

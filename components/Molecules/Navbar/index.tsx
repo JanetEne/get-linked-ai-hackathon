@@ -3,13 +3,14 @@ import Container from '@components/Atoms/Container';
 import Icon from '@components/Atoms/Icon';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 
 interface INavBar {
   show?: boolean;
+  colorText?: boolean;
 }
 
-const Navbar: FC<INavBar> = ({ show = true }) => {
+const Navbar: FC<INavBar> = ({ show = true, colorText = false }) => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
 
   const router = useRouter();
@@ -20,8 +21,36 @@ const Navbar: FC<INavBar> = ({ show = true }) => {
       return '/#timeline';
     } else if (pathName !== '/' && item === 'faqs') {
       return '/#faqs';
+    } else if (pathName !== '/' && item === 'overview') {
+      return '/#overview';
     }
     return `#${item}`;
+  };
+
+  useEffect(() => {
+    window.onscroll = () => navScroll();
+  }, []);
+
+  const navScroll = () => {
+    const navbar = window.document.querySelector('#navbar');
+    const layoutContentContainer = window.document.querySelector(
+      '#layout_content_container'
+    );
+    const bodyContainer = window.document.querySelector('#body-container');
+    if (
+      document.body.scrollTop > 250 ||
+      document.documentElement.scrollTop > 250
+    ) {
+      navbar?.classList.add('fixed');
+      navbar?.classList.remove('relative');
+      navbar?.classList.add('shadow-lg');
+    } else {
+      navbar?.classList.remove('fixed');
+      navbar?.classList.add('relative');
+      navbar?.classList.remove('shadow-lg');
+      navbar?.classList.add('z-[100]');
+      navbar?.classList.add('bg-background');
+    }
   };
 
   return (
@@ -48,7 +77,15 @@ const Navbar: FC<INavBar> = ({ show = true }) => {
               <p className="py-2 px-4 text-body cursor-pointer">FAQs</p>
             </Link>
             <Link href="/contact">
-              <p className="py-2 px-4 text-body cursor-pointer">Contact</p>
+              <p
+                className={`${
+                  colorText
+                    ? 'bg-gradient-to-r from-secondary from-3% to-tetiary to-93% text-transparent bg-clip-text'
+                    : 'text-white'
+                } py-2 px-4 text-body cursor-pointer`}
+              >
+                Contact
+              </p>
             </Link>
           </div>
         </div>
@@ -67,7 +104,7 @@ const Navbar: FC<INavBar> = ({ show = true }) => {
         <div
           className={`${
             toggleMenu
-              ? 'flex flex-col absolute md:fixed top-0 right-0 z-50 w-full h-full md:w-fit bg-background pt-8 pb-12 px-4 md:block animate-appear'
+              ? 'flex flex-col fixed top-0 right-0 z-50 w-full md:w-fit bg-background pt-8 pb-12 px-4 md:block animate-appear'
               : 'hidden md:block'
           }`}
         >

@@ -4,7 +4,7 @@ import React from 'react';
 
 const PricesAndRewards = () => {
   return (
-    <div className="bg-footerBg">
+    <div className="bg-introBg">
       <Container className="py-20">
         <div className="lg:gap-20 gap-10 flex lg:flex-row flex-col lg:px-20">
           <div className="lg:w-[40%] flex justify-center flex-col items-center">

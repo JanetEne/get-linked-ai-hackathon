@@ -17,7 +17,7 @@ const Input: FC<IProps & InputHTMLAttributes<HTMLInputElement>> = ({
       {label && <label className="text-xs">{label}</label>}
 
       <input
-        className={`${className} border-[1px] gap-2 border-white rounded-[4px] w-full py-4 outline-none bg-transparent text-xs placeholder:text-white/25 text-white/25 px-4`}
+        className={`${className} border-[1px] gap-2 focus:border-primary border-white rounded-[4px] w-full py-4 outline-none bg-transparent text-xs placeholder:text-white/25 text-white/25 px-4`}
         placeholder={placeholder}
         {...props}
       />

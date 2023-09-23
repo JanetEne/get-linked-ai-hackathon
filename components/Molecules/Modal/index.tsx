@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 
 interface IProps {
   children: ReactNode;
@@ -7,7 +7,6 @@ interface IProps {
   title?: string;
   center?: boolean;
   bgColor?: string;
-  darkenOverlay?: boolean;
 }
 
 export const Modal = ({
@@ -16,49 +15,43 @@ export const Modal = ({
   close,
   title,
   center,
-  bgColor,
-  darkenOverlay = true,
 }: IProps) => {
-  if (!isVisible) {
-    return null;
-  } else {
-    document.body.style.overflow = 'hidden';
-    // document.getElementById('fc_frame')!.style.display = 'none';
-  }
+  const [openModal, setOpenModal] = useState<boolean>();
+
+  useEffect(() => {
+    isVisible ? setOpenModal(true) : setOpenModal(false);
+    if (isVisible === true) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isVisible]);
 
   return (
-    <div
-      className={`${
-        darkenOverlay ? 'bg-black/40 ' : 'bg-black/0 '
-      } fixed top-0 right-0 overflow-y-auto z-[9999] h-full w-full  flex justify-center  ${
-        center ? ' items-end md:items-center ' : ''
-      }`}
-    >
-      <div className="animate-popUp md:animate-appear w-full md:max-w-[600px] xl:min-w-[450px] mb-0">
+    <>
+      {openModal ? (
         <div
-          className={` px-6 py-6 xlg:mx-4 rounded-t-xl md:rounded-xl ${
-            bgColor ? bgColor : 'bg-white '
+          className={`bg-background/90 fixed  overflow-y-auto z-[9999] h-full w-full flex justify-center  ${
+            center ? 'items-center' : ''
           }`}
         >
-          <div
-            className={`${
-              title ? 'justify-between ' : 'justify-end '
-            } flex items-center `}
-          >
-            {title && <div className=" font-semibold">{title}</div>}
-            <span
-              onClick={() => {
-                document.body.style.overflow = 'scroll';
-                document.getElementById('fc_frame')!.style.display = 'unset';
-                close(false);
-              }}
-              className="px-0  cursor-pointer"
-            ></span>
-          </div>
+          <div className="w-full max-w-[600px] xl:min-w-[450px] px-4 md:px-0 mb-0">
+            <div
+              className={`animate-popUp md:animate-appear px-6 py-6 xlg:mx-4 bg-transparent border-primary rounded-md border-[1px] mb-0`}
+            >
+              <div
+                className={`${
+                  title ? 'justify-between ' : 'justify-end '
+                } flex items-center `}
+              >
+                {title && <div className=" font-semibold">{title}</div>}
+              </div>
 
-          <div className="pb-4 pt-8">{children}</div>
+              <div>{children}</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      ) : null}
+    </>
   );
 };

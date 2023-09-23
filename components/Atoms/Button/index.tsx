@@ -15,7 +15,7 @@ const Button = (
   return (
     <button
       disabled={loading}
-      className={` w-full text-white rounded-sm ${
+      className={` w-full disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-sm ${
         size === 'small'
           ? 'text-[14px] px-4 py-2'
           : size === 'large'
