@@ -45,7 +45,7 @@ const HeroSection = () => {
               </span>
             </p>
           </div>
-          <p className="lg:text-lg text-xs leading-7">
+          <p className="lg:text-lg text-xs leading-7 lg:leading-7">
             Participate in getlinked tech Hackathon 2023 stand{' '}
             <br className="hidden lg:block" /> a chance to win a Big prize
           </p>

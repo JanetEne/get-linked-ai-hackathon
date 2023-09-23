@@ -27,7 +27,7 @@ const Footer = () => {
                   get<span className="text-primary">linked</span>
                 </p>
               </Link>
-              <p className="text-xs text-start leading-7">
+              <p className="text-xs text-start leading-7 lg:leading-7">
                 Getlinked Tech Hackathon is a technology innovation program{' '}
                 <br className="hidden xl:block" />
                 established by a group of organizations with the aim of{' '}

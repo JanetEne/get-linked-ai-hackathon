@@ -24,13 +24,14 @@ const AuthLayout = ({ children, title }: AuthProps) => {
         <p className="text-primary font-semibold flex items-start px-[1rem] pt-4 lg:hidden font-clash text-2xl">
           Register
         </p>
-        <div className="flex items-center justify-center flex-col relative">
-          <span className="absolute -top-12 -left-12 h-full w-full">
+        <div className="flex items-center justify-center flex-col lg:relative">
+          <span className="lg:absolute static lg:-top-12 lg:-left-12 h-full w-full">
             <Image
               src={'/assets/svg/purpleFlare.svg'}
               alt="background frames"
               layout="fill"
               objectFit="contain"
+              className=" hidden lg:block"
             />
           </span>
           <Image
@@ -38,7 +39,7 @@ const AuthLayout = ({ children, title }: AuthProps) => {
             src="/assets/images/register.png"
             width={550}
             height={550}
-            className="absolute z-30"
+            className="lg:absolute lg:z-30"
           />
         </div>
         <div className="flex md:justify-center 2xl:justify-start md:items-center">

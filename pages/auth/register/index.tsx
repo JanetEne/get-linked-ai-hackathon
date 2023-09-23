@@ -105,7 +105,7 @@ const Register = () => {
             width={500}
             height={500}
           />
-          <p className="md:text-xl text-sm text-center font-semibold leading-7">
+          <p className="md:text-xl text-sm text-center font-semibold leading-7 lg:leading-7">
             Congratulations <br /> you have successfully Registered!
           </p>
           <div className="flex gap-1 flex-col md:text-sm text-xs text-center">
@@ -174,7 +174,7 @@ const Register = () => {
             />
           </div>
 
-          <div className="grid md:grid-cols-2 grid-cols-[60%_30%] lg:gap-8 gap-4">
+          <div className="grid grid-cols-2 lg:gap-8 gap-4">
             <Select
               onChange={(e) => setCategory(e)}
               title={'Select your category'}

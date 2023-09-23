@@ -22,7 +22,7 @@ const Faqs = () => {
               <p className="text-white leading-[1]">Frequently Asked</p>
               <p className="text-primary">Questions</p>
             </div>
-            <p className="md:text-sm text-xs text-center lg:text-start leading-7 lg:pb-16 pb-6 lg:w-[80%]">
+            <p className="md:text-sm text-xs text-center lg:text-start leading-7 lg:leading-7 lg:pb-16 pb-6 lg:w-[80%]">
               We got answers to the questions that you might want to ask about{' '}
               <span className="font-medium">getlinked Hackathon 1.0</span>
             </p>

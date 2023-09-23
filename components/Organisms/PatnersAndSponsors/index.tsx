@@ -18,7 +18,7 @@ const PartnersAndSponsors = () => {
           <p className="leading-[1] font-clash font-extrabold lg:text-2xl text-lg">
             Partners and Sponsors
           </p>
-          <p className="lg:text-sm text-xs leading-7">
+          <p className="lg:text-sm text-xs leading-7 lg:leading-7">
             Getlinked Hackathon 1.0 is honored to have the following major
             companies as its partners and sponsors
           </p>

@@ -60,7 +60,7 @@ const Contact = () => {
             width={500}
             height={500}
           />
-          <p className="md:text-xl text-sm text-center font-semibold leading-7">
+          <p className="md:text-xl text-sm text-center font-semibold leading-7 lg:leading-7">
             Your message has been sent!
           </p>
 
@@ -75,7 +75,12 @@ const Contact = () => {
       </Modal>
       <ContactLayout title="Contact">
         <div className="lg:shadow-cardShadow lg:bg-white/5 w-full px-[1rem] sm:px-[2rem] md:px-[3rem] 2xl:px-[4rem] lg:py-12 py-4 lg:rounded-xl lg:bg-[rgba(255, 255, 255, 0.03)] flex flex-col gap-6">
-          <Icon icon="ArrowBack" className="flex lg:hidden mb-6 w-6 h-6" />
+          <div onClick={() => router.back()}>
+            <Icon
+              icon="ArrowBack"
+              className="flex lg:hidden mb-6 w-6 h-6 cursor-pointer"
+            />
+          </div>
 
           <p className="text-primary font-semibold font-clash text-2xl">
             Questions or need assistance? <br /> Let us know about it!

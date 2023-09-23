@@ -7,6 +7,7 @@
   font-weight: 300;
   font-style: normal;
   src: url("../fonts/Montserrat-Light.woff");
+  line-height: 2.5rem;
 }
 
 @font-face {

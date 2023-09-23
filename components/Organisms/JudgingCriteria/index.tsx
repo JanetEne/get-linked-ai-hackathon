@@ -16,7 +16,7 @@ const JudgingCriteria = () => {
               objectFit="contain"
             />
           </span>
-          <span className="absolute top-[4.9rem] left-[9.5rem] h-[6.5rem] w-[6.5rem]">
+          <span className="lg:absolute top-[4.9rem] left-[9.5rem] h-[6.5rem] w-[6.5rem] lg:flex hidden">
             <Image
               src={'/assets/svg/ecllipse.svg'}
               alt="background"
@@ -24,7 +24,7 @@ const JudgingCriteria = () => {
               objectFit="contain"
             />
           </span>
-          <span className="absolute z-10 top-24">
+          <span className="lg:absolute lg:z-10 lg:top-24">
             <Image
               src="/assets/images/judging-criteria.png"
               alt="the big idea"
@@ -38,7 +38,7 @@ const JudgingCriteria = () => {
             <p className="leading-[1]">Judging Criteria</p>
             <p className="text-primary">Key attributes</p>
           </div>
-          <p className="lg:text-sm text-xs leading-7">
+          <p className="lg:text-sm text-xs leading-7 lg:leading-7">
             <span className="text-tetiary font-semibold">
               Innovation and Creativity:
             </span>{' '}
@@ -46,13 +46,13 @@ const JudgingCriteria = () => {
             whether it addresses a real-world problem in a novel way or
             introduces innovative features.
           </p>
-          <p className="lg:text-sm text-xs leading-7">
+          <p className="lg:text-sm text-xs leading-7 lg:leading-7">
             <span className="text-tetiary font-semibold">Functionality:</span>{' '}
             Assess how well the solution works. Does it perform its intended
             functions effectively and without major issues? Judges would
             consider the completeness and robustness of the solution.
           </p>
-          <p className="lg:text-sm text-xs leading-7">
+          <p className="lg:text-sm text-xs leading-7 lg:leading-7">
             <span className="text-tetiary font-semibold">
               Impact and Relevance:
             </span>{' '}
@@ -61,7 +61,7 @@ const JudgingCriteria = () => {
             target audience? Judges would assess the potential social, economic,
             or environmental benefits.
           </p>
-          <p className="lg:text-sm text-xs leading-7">
+          <p className="lg:text-sm text-xs leading-7 lg:leading-7">
             <span className="text-tetiary font-semibold">
               Technical Complexity:
             </span>{' '}
@@ -69,7 +69,7 @@ const JudgingCriteria = () => {
             consider the complexity of the code, the use of advanced
             technologies or algorithms, and the scalability of the solution.
           </p>
-          <p className="lg:text-sm text-xs leading-7">
+          <p className="lg:text-sm text-xs leading-7 lg:leading-7">
             <span className="text-tetiary font-semibold">
               Adherence to Hackathon Rules:
             </span>{' '}

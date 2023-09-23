@@ -13,7 +13,7 @@ const PricesAndRewards = () => {
                 <p className="text-white leading-[1]">Prizes and</p>
                 <p className="text-primary">Rewards</p>
               </div>
-              <p className="md:text-sm text-xs text-center lg:text-start leading-7 lg:pb-16 pb-6">
+              <p className="md:text-sm text-xs text-center lg:text-start leading-7 lg:leading-7 lg:pb-16 pb-6">
                 Highlight of the prizes or rewards for winners and for{' '}
                 <br className="hidden lg:block" />
                 participants.
@@ -33,7 +33,7 @@ const PricesAndRewards = () => {
                 <p className="text-white leading-[1]">Prizes and</p>
                 <p className="text-primary">Rewards</p>
               </div>
-              <p className="md:text-sm text-xs text-center lg:text-start leading-7 lg:pb-16 pb-6 lg:w-[80%]">
+              <p className="md:text-sm text-xs text-center lg:text-start leading-7 lg:leading-7 lg:pb-16 pb-6 lg:w-[80%]">
                 Highlight of the prizes or rewards for winners and for
                 participants.
               </p>
