@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Montserrat-Light.woff");
+  line-height: 2.5rem;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Montserrat-Regular.woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Montserrat-Medium.woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Montserrat-SemiBold.woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Inter-Medium.woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Inter-SemiBold.woff");
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/ClashDisplay-Light.woff");
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ClashDisplay-Regular.woff");
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/ClashDisplay-Medium.woff");
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/ClashDisplay-Semibold.woff");
+}
+
+@font-face {
+  font-family: "UnicaOne";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/UnicaOne-Regular.woff");
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  @apply bg-background font-montserrat text-white
+}
+
+/* .blendHardLight {
+  background-blend-mode: hard-light;
+} */
+
+/* .landing-hero {
+  @apply bg-hero-purple-lens bg-no-repeat bg-[left_-22em_top_-13rem];
+}
+
+.landing-header {
+  @apply bg-secondary lg:bg-hero-pattern bg-no-repeat bg-[length:230px_400px];
+} */
