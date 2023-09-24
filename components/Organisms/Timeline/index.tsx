@@ -20,7 +20,7 @@ const Timeline = () => {
               <p className="text-md lg:text-lg font-bold text-right text-primary">
                 Hackathon Announcement
               </p>
-              <p className="leading-7 lg:leading-7 lg:text-sm text-xs lg:text-right text-start">
+              <p className="leading-4 lg:leading-7 lg:text-sm text-xs lg:text-right text-start">
                 The getlinked tech hackathon 1.0 is formally announced{' '}
                 <br className="hidden lg:block" /> to the general public and
                 teams begin to get ready to register
@@ -61,7 +61,7 @@ const Timeline = () => {
               <p className="text-md lg:text-lg text-start font-bold text-primary">
                 Teams Registration begins
               </p>
-              <p className="text-xs leading-7 lg:leading-7 lg:text-sm">
+              <p className="text-xs leading-4 lg:leading-7 lg:text-sm">
                 Interested teams can now show their interest in the{' '}
                 <br className="hidden lg:block" />
                 getlinked tech hackathon 1.0 2023 by proceeding to register
@@ -78,7 +78,7 @@ const Timeline = () => {
               <p className="text-md font-bold text-right text-primary">
                 Teams Registration ends
               </p>
-              <p className="lg:text-right text-start leading-7 lg:leading-7 lg:text-sm text-xs">
+              <p className="lg:text-right text-start leading-4 lg:leading-7 lg:text-sm text-xs">
                 Interested Participants are no longer Allowed to{' '}
                 <br className="hidden lg:block" />
                 register
@@ -121,7 +121,7 @@ const Timeline = () => {
                 <br className="hidden lg:block" />
                 and ideas
               </p>
-              <p className="leading-7 lg:leading-7 lg:text-sm text-xs">
+              <p className="leading-4 lg:leading-7 lg:text-sm text-xs">
                 All teams whom idea has been accepted into getlinked tech{' '}
                 <br className="hidden lg:flex" />
                 hackathon 1.0 2023 are formally announced
@@ -135,10 +135,10 @@ const Timeline = () => {
           </div>
           <div className="lg:grid lg:grid-cols-[45%_5%_45%] flex lg:gap-10 gap-2 items-start lg:items-end mb-8">
             <div className="flex flex-col items-start lg:items-end lg:gap-4 lg:order-1 order-2">
-              <p className="lg:text-lg text-md font-bold text-right text-primary">
+              <p className="lg:text-lg text-md font-bold lg:text-right  text-primary">
                 Getlinked Hackathon 1.0 Offically Begins
               </p>
-              <p className="lg:text-right text-start leading-7 lg:leading-7 lg:text-sm text-xs">
+              <p className="lg:text-right text-start leading-4 lg:leading-7 lg:text-sm text-xs">
                 Accepted teams can now proceed to build their{' '}
                 <br className="hidden lg:block" />
                 ground breaking skill driven solutions
@@ -179,7 +179,7 @@ const Timeline = () => {
               <p className="text-md text-start font-bold text-primary">
                 Demo Day
               </p>
-              <p className="leading-7 lg:leading-7 lg:text-sm text-xs">
+              <p className="leading-4 lg:leading-7 lg:text-sm text-xs">
                 Teams get the opportunity to pitch their projects to judges.{' '}
                 <br className="hidden lg:block" />
                 The winner of the hackathon will also be announced on{' '}
@@ -305,7 +305,7 @@ const Timeline = () => {
             </div>
             <div className="flex flex-col gap-4 right-[15.3rem] text-start absolute -bottom-[4.3rem]">
               <p className="text-md font-bold text-primary">Demo Day</p>
-              <p className="text-xs leading-7 lg:leading-7">
+              <p className="text-xs leading-4 lg:leading-7">
                 Teams get the opportunity to pitch their projects to judges.{' '}
                 <br className="hidden lg:block" />
                 The winner of the hackathon will also be announced on{' '}
