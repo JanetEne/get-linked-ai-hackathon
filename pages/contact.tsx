@@ -83,11 +83,13 @@ const Contact = () => {
           </div>
 
           <p className="text-primary font-semibold font-clash text-2xl">
-            Questions or need assistance? <br /> Let us know about it!
+            Questions or need assistance? <br className="hidden lg:block" /> Let
+            us know about it!
           </p>
 
           <p className="text-xs flex lg:hidden">
-            Email us below to any question related <br />
+            Email us below to any question related{' '}
+            <br className="hidden lg:block" />
             to our event
           </p>
 

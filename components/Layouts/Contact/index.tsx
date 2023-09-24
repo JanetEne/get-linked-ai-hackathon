@@ -36,17 +36,17 @@ const ContactLayout = ({ children, title }: AuthProps) => {
               Get In Touch
             </p>
             <p>
-              Contact <br />
+              Contact <br className="hidden lg:block" />
               Information
             </p>
             <p>
-              27,Alara Street <br />
-              Yaba 100012 <br />
+              27,Alara Street <br className="hidden lg:block" />
+              Yaba 100012 <br className="hidden lg:block" />
               Lagos State
             </p>
             <p>Call Us : 07067981819</p>
             <p>
-              we are open from Monday-Friday <br />
+              we are open from Monday-Friday <br className="hidden lg:block" />
               08:00am - 05:00pm
             </p>
             <p className="text-primary">Share on</p>

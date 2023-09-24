@@ -98,7 +98,8 @@ const Footer = () => {
               <div className="flex gap-4 xl:pr-32">
                 <Icon icon="Location" className="mt-1" />
                 <p className="text-xs leading-5">
-                  27,Alara Street <br /> Yaba 100012 <br /> Lagos State
+                  27,Alara Street <br className="hidden lg:block" /> Yaba 100012{' '}
+                  <br className="hidden lg:block" /> Lagos State
                 </p>
               </div>
             </div>

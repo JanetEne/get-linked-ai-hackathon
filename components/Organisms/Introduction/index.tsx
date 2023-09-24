@@ -28,7 +28,8 @@ const Introduction = () => {
               <p className="text-primary text-body">tech Hackathon 1.0</p>
             </div>
             <p className="leading-7 lg:leading-7 lg:text-sm text-xs">
-              Our tech hackathon is a melting pot of visionaries, and its <br />
+              Our tech hackathon is a melting pot of visionaries, and its{' '}
+              <br className="hidden lg:block" />
               purpose is as clear as day: to shape the future. Whether
               you&apos;re a coding genius, a design maverick, or a concept
               wizard, you&apos;ll have the chance to transform your ideas into
