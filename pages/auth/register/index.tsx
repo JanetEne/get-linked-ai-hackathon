@@ -106,7 +106,8 @@ const Register = () => {
             height={500}
           />
           <p className="md:text-xl text-sm text-center font-semibold leading-7 lg:leading-7">
-            Congratulations <br /> you have successfully Registered!
+            Congratulations <br className="hidden lg:block" /> you have
+            successfully Registered!
           </p>
           <div className="flex gap-1 flex-col md:text-sm text-xs text-center">
             <p>Yes, it was easy and you did it!</p>
@@ -180,12 +181,14 @@ const Register = () => {
               title={'Select your category'}
               label="Category"
               defaultValue={category?.name}
+              data={categories}
             />
             <Select
               onChange={(e) => setSize(e)}
               title={'Select'}
               label="Group Size"
               data={getGroupSize()}
+              defaultValue={size?.name}
             />
           </div>
 
